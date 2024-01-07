@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: #f2eae2;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+button {
+  background: none;
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  width: 90%;
+  max-width: 343px;
+}
+
+.main {
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.img {
+  width: 100%;
+  min-height: 240px;
+  background-image: url("./images/image-product-mobile.jpg");
+  background-size: cover;
+  /* border: 1px solid black; */
+}
+
+.product {
+  padding: 1.5rem;
+}
+
+.prefume {
+  color: #6c7289;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.3125rem;
+  text-transform: uppercase;
+}
+
+.product h1 {
+  color: #1c232b;
+  font-family: "Fraunces", "serif";
+  line-height: 2rem;
+  margin-block: 0.625em 0.75em;
+}
+
+.description {
+  color: #6c7289;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.4375rem;
+  margin-bottom: 2.07em;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 1.19em;
+}
+
+.discount {
+  color: #3d8168;
+  font-family: "Fraunces", serif;
+  margin: 0;
+}
+.real-price {
+  color: #6c7289;
+  font-size: 0.8725rem;
+  text-decoration: line-through;
+}
+
+.cart-icon {
+  width: 14.39px;
+  pointer-events: none;
+}
+
+.cart-btn {
+  width: 100%;
+  background-color: #3d8168;
+  color: #fff;
+  border: none;
+  margin-top: 1.5em;
+  padding: 1rem 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 0.73em;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.cart-btn:hover,
+.cart-btn:focus {
+  background-color: #1a4032;
+}
+
+.attribution-section {
+  background: #f2eae2;
+  opacity: 0.9;
+  padding: 2em;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+@media (min-width: 600px) {
+  .container {
+    max-width: 600px;
+  }
+
+  .main {
+    flex-direction: row;
+  }
+
+  .img {
+    min-width: 300px;
+    height: auto;
+    background-image: url("./images/image-product-desktop.jpg");
+  }
+
+  .product {
+    padding: 2em;
+  }
+}
